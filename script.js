@@ -5,6 +5,10 @@ var maxFrogs = 10;
 var isPaused = false;
 // Function to check if the maximum number of frogs has been reached
 
+var backgroundMusic = new Audio('background_music.mp3');
+        backgroundMusic.loop = true; // Loop the music
+        backgroundMusic.volume = 0.3;
+
 
 function isMaxFrogsReached() {
     var frogs = document.getElementsByClassName('frog');
@@ -40,6 +44,7 @@ function spawnFrog() {
         // Play frog sound
         var audio = new Audio('boop.mp3');
         audio.play();
+        backgroundMusic.play();
 
         // Check if the counter is a multiple of 10
 
