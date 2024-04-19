@@ -1,7 +1,7 @@
 var counter = 0;
 var intervalTime = 500; // Initial interval time (in milliseconds)
 var frogInterval; // Variable to store the interval ID
-var maxFrogs = 100;
+var maxFrogs = 10;
 var isPaused = false;
 // Function to check if the maximum number of frogs has been reached
 
@@ -47,6 +47,16 @@ function spawnFrog() {
 
     // Add the frog to the container
     container.appendChild(frog);
+        if (isMaxFrogsReached()) {
+          counter = 0; // Reset counter
+          document.getElementById('counter').textContent = 'Counter: ' + counter; // Update counter display
+          // Clear all frogs from the screen
+          var frogs = document.getElementsByClassName('frog');
+          while (frogs[0]) {
+             frogs[0].parentNode.removeChild(frogs[0]);
+          }
+      }
+    
 }
 
 function togglePause() {
