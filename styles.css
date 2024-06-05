@@ -15,9 +15,8 @@
     position: absolute;
     cursor: pointer;
     -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 #counter {
@@ -29,10 +28,10 @@
     transform: translateX(-50%) translateY(-50%);
     font-size: 100px;
     color: white;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
     height: 0px;
 }
 
@@ -89,10 +88,10 @@
       transform: translateX(-50%) translateY(-50%);
       font-size: 40px;
       color: white;
-      -webkit-user-select: none; /* Safari */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
+      -webkit-user-select: none;
+      -moz-user-select: none; 
+      -ms-user-select: none; 
+      user-select: none; 
       height: 0px;
 
 }
